@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compaible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>socialApp - Responsive Social Media Website Using HTML, CSS & Javascript</title>
+        <!-- ICONSCOUT CDN -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+        <!-----STYLE SHEET------>
+        
+        <link rel="stylesheet" href="./style.css">
+    
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <h2 class ="log">
+                    socialApp
+                </h2> 
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path></svg>
+
+                    </i>
+                    <input type="search" placeholder="Search for creators, inspirations, and projects">
+                </div>
+                <div class="create"> <!-- Correct class name -->
+                    <label class="btn btn-primary" for="create-post">create</label>
+                    <div class="profile-photo">
+                        <img src="./images/profile-47.jpg">
+                    </div>
+                </div>
+                
+            </div>
+
+    </nav>
+
+    <main>
+        <div class="container">
+            
+            <div class="left">
+                <a  class="profile">
+                    <div class="profile-photo">
+                      <img src="./images/profile-47.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Anu Nuwanthi</h4>
+                        <p class="text-muted">
+                            @anu
+                        </p>
+  
+                    </div>
+                </a>
+
+                <!----SIDEBAR--->
+                <div class="sidebar ">
+                  <a class="menu-item active">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill-rule="evenodd" clip-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 1166.66 1166.66" id="home"><path fill-rule="nonzero" d="M865.1 914.18l-194.2 0c-7.87,0 -14.24,-6.37 -14.24,-14.22l0 -248.31 -137.67 0 0 248.31c0,7.85 -6.37,14.22 -14.22,14.22l-194.56 0c-7.84,0 -14.21,-6.37 -14.21,-14.22l0 -319.75c0,-7.86 6.37,-14.22 14.21,-14.22 7.85,0 14.21,6.36 14.21,14.22l0 305.53 166.13 0 0 -248.31c0,-7.85 6.37,-14.22 14.21,-14.22l166.13 0c7.84,0 14.21,6.37 14.21,14.22l0 248.31 165.77 0 0 -305.53c0,-7.86 6.37,-14.22 14.22,-14.22 7.84,0 14.21,6.36 14.21,14.22l0 319.75c0,7.85 -6.37,14.22 -14.21,14.22z"></path><path fill-rule="nonzero" d="M225.6 587.83c-4,0 -8,-1.69 -10.8,-4.98 -5.09,-5.96 -4.41,-14.94 1.56,-20.04l358.95 -306.91c5.3,-4.54 13.12,-4.55 18.44,-0.04l356.51 302.4c5.99,5.09 6.72,14.06 1.63,20.05 -5.07,5.99 -14.03,6.72 -20.02,1.65l-347.28 -294.58 -349.74 299.06c-2.67,2.29 -5.96,3.41 -9.24,3.41z"></path></svg></span><h10>Home</h10>
+                  </a>
+
+                  <a class="menu-item">
+                    <span><svg <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM5.78 8.75a9.64 9.64 0 0 0 1.363 4.177c.255.426.542.832.857 1.215.245-.296.551-.705.857-1.215A9.64 9.64 0 0 0 10.22 8.75Zm4.44-1.5a9.64 9.64 0 0 0-1.363-4.177c-.307-.51-.612-.919-.857-1.215a9.927 9.927 0 0 0-.857 1.215A9.64 9.64 0 0 0 5.78 7.25Zm-5.944 1.5H1.543a6.507 6.507 0 0 0 4.666 5.5c-.123-.181-.24-.365-.352-.552-.715-1.192-1.437-2.874-1.581-4.948Zm-2.733-1.5h2.733c.144-2.074.866-3.756 1.58-4.948.12-.197.237-.381.353-.552a6.507 6.507 0 0 0-4.666 5.5Zm10.181 1.5c-.144 2.074-.866 3.756-1.58 4.948-.12.197-.237.381-.353.552a6.507 6.507 0 0 0 4.666-5.5Zm2.733-1.5a6.507 6.507 0 0 0-4.666-5.5c.123.181.24.365.353.552.714 1.192 1.436 2.874 1.58 4.948Z"></path></svg></svg></span><h10>Explore</h10>
+                  </a>
+
+                  <a class="menu-item" id="notifications">
+                    <span><svg <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path></svg>></svg><small class="notification-count">9+</small></span><h15>Notifications<h15>
+                    <!--------NOTIFICATIONS POPUP---->
+                    <div class="notifications-popup">
+                        <div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-2.jpg">
+                            </div>
+                            <div class="notificaions-body">
+                                <b>Buddhika Aththanayake</b> accepted your friend request
+                                <small class="text-muted">2 Days ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-3.jpg">
+                            </div>
+                            <div class="notificaions-body">
+                                <b>Sandali Amarasinghe</b> commented on your post
+                                <small class="text-muted">1 Hour ago</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-4.jpg">
+                            </div>
+                            <div class="notificaions-body">
+                                <b>Yashodha Diwyanjali</b>and<b>283 others </b> liked your post
+                                <small class="text-muted">4 minutues ago</small>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-5.jpg">
+                            </div>
+                            <div class="notificaions-body">
+                                <b>Sachini Nimasha </b>commented on a post you are tagged in 
+                                <small class="text-muted">2 Days ago</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="profile-photo">
+                                <img src="./images/profile-6.jpg">
+                            </div>
+                            <div class="notificaions-body">
+                                <b>Amangi Liyanaarchchi </b>commented on a post you are tagged in 
+                                <small class="text-muted">1 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------END NOTIFICATION POPUP---------->
+                  </a>
+
+                  <a class="menu-item"id="messages-notifications">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0 1 13.25 12H9.06l-2.573 2.573A1.458 1.458 0 0 1 4 13.543V12H2.75A1.75 1.75 0 0 1 1 10.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h4.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg><small class="notification-count">6</small></span><h13>Messages</h133>
+                  </a>
+
+                    <a class="menu-item">
+                    <span><svg <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v11.5a.75.75 0 0 1-1.227.579L8 11.722l-3.773 3.107A.751.751 0 0 1 3 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.91l3.023-2.489a.75.75 0 0 1 .954 0l3.023 2.49V2.75a.25.25 0 0 0-.25-.25Z"></path></svg></svg></span><h10>Bookmarks</h10>
+                    
+                    </a>
+                    
+                    <a class="menu-item">
+                    <span><svg <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M1 3.5c0-.626.292-1.165.7-1.59.406-.422.956-.767 1.579-1.041C4.525.32 6.195 0 8 0c1.805 0 3.475.32 4.722.869.622.274 1.172.62 1.578 1.04.408.426.7.965.7 1.591v9c0 .626-.292 1.165-.7 1.59-.406.422-.956.767-1.579 1.041C11.476 15.68 9.806 16 8 16c-1.805 0-3.475-.32-4.721-.869-.623-.274-1.173-.62-1.579-1.04-.408-.426-.7-.965-.7-1.591Zm1.5 0c0 .133.058.318.282.551.227.237.591.483 1.101.707C4.898 5.205 6.353 5.5 8 5.5c1.646 0 3.101-.295 4.118-.742.508-.224.873-.471 1.1-.708.224-.232.282-.417.282-.55 0-.133-.058-.318-.282-.551-.227-.237-.591-.483-1.101-.707C11.102 1.795 9.647 1.5 8 1.5c-1.646 0-3.101.295-4.118.742-.508.224-.873.471-1.1.708-.224.232-.282.417-.282.55Zm0 4.5c0 .133.058.318.282.551.227.237.591.483 1.101.707C4.898 9.705 6.353 10 8 10c1.646 0 3.101-.295 4.118-.742.508-.224.873-.471 1.1-.708.224-.232.282-.417.282-.55V5.724c-.241.15-.503.286-.778.407C11.475 6.68 9.805 7 8 7c-1.805 0-3.475-.32-4.721-.869a6.15 6.15 0 0 1-.779-.407Zm0 2.225V12.5c0 .133.058.318.282.55.227.237.592.484 1.1.708 1.016.447 2.471.742 4.118.742 1.647 0 3.102-.295 4.117-.742.51-.224.874-.47 1.101-.707.224-.233.282-.418.282-.551v-2.275c-.241.15-.503.285-.778.406-1.247.549-2.917.869-4.722.869-1.805 0-3.475-.32-4.721-.869a6.327 6.327 0 0 1-.779-.406Z"></path></svg></svg></span><h10>Analytics</h10>
+                    </a>
+
+                     <a class="menu-item">
+                    <span><svg <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"></path></svg></svg></span><h10>Theme</h10>
+                     </a>
+
+                    <a class="menu-item active">
+                    <span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-1.5 0a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"></path><path d="M12 1c.266 0 .532.009.797.028.763.055 1.345.617 1.512 1.304l.352 1.45c.019.078.09.171.225.221.247.089.49.19.728.302.13.061.246.044.315.002l1.275-.776c.603-.368 1.411-.353 1.99.147.402.349.78.726 1.128 1.129.501.578.515 1.386.147 1.99l-.776 1.274c-.042.069-.058.185.002.315.112.238.213.481.303.728.048.135.142.205.22.225l1.45.352c.687.167 1.249.749 1.303 1.512.038.531.038 1.063 0 1.594-.054.763-.616 1.345-1.303 1.512l-1.45.352c-.078.019-.171.09-.221.225-.089.248-.19.491-.302.728-.061.13-.044.246-.002.315l.776 1.275c.368.603.353 1.411-.147 1.99-.349.402-.726.78-1.129 1.128-.578.501-1.386.515-1.99.147l-1.274-.776c-.069-.042-.185-.058-.314.002a8.606 8.606 0 0 1-.729.303c-.135.048-.205.142-.225.22l-.352 1.45c-.167.687-.749 1.249-1.512 1.303-.531.038-1.063.038-1.594 0-.763-.054-1.345-.616-1.512-1.303l-.352-1.45c-.019-.078-.09-.171-.225-.221a8.138 8.138 0 0 1-.728-.302c-.13-.061-.246-.044-.315-.002l-1.275.776c-.603.368-1.411.353-1.99-.147-.402-.349-.78-.726-1.128-1.129-.501-.578-.515-1.386-.147-1.99l.776-1.274c.042-.069.058-.185-.002-.314a8.606 8.606 0 0 1-.303-.729c-.048-.135-.142-.205-.22-.225l-1.45-.352c-.687-.167-1.249-.749-1.304-1.512a11.158 11.158 0 0 1 0-1.594c.055-.763.617-1.345 1.304-1.512l1.45-.352c.078-.019.171-.09.221-.225.089-.248.19-.491.302-.728.061-.13.044-.246.002-.315l-.776-1.275c-.368-.603-.353-1.411.147-1.99.349-.402.726-.78 1.129-1.128.578-.501 1.386-.515 1.99-.147l1.274.776c.069.042.185.058.315-.002.238-.112.481-.213.728-.303.135-.048.205-.142.225-.22l.352-1.45c.167-.687.749-1.249 1.512-1.304C11.466 1.01 11.732 1 12 1Zm-.69 1.525c-.055.004-.135.05-.161.161l-.353 1.45a1.832 1.832 0 0 1-1.172 1.277 7.147 7.147 0 0 0-.6.249 1.833 1.833 0 0 1-1.734-.074l-1.274-.776c-.098-.06-.186-.036-.228 0a9.774 9.774 0 0 0-.976.976c-.036.042-.06.131 0 .228l.776 1.274c.314.529.342 1.18.074 1.734a7.147 7.147 0 0 0-.249.6 1.831 1.831 0 0 1-1.278 1.173l-1.45.351c-.11.027-.156.107-.16.162a9.63 9.63 0 0 0 0 1.38c.004.055.05.135.161.161l1.45.353a1.832 1.832 0 0 1 1.277 1.172c.074.204.157.404.249.6.268.553.24 1.204-.074 1.733l-.776 1.275c-.06.098-.036.186 0 .228.301.348.628.675.976.976.042.036.131.06.228 0l1.274-.776a1.83 1.83 0 0 1 1.734-.075c.196.093.396.176.6.25a1.831 1.831 0 0 1 1.173 1.278l.351 1.45c.027.11.107.156.162.16a9.63 9.63 0 0 0 1.38 0c.055-.004.135-.05.161-.161l.353-1.45a1.834 1.834 0 0 1 1.172-1.278 6.82 6.82 0 0 0 .6-.248 1.831 1.831 0 0 1 1.733.074l1.275.776c.098.06.186.036.228 0 .348-.301.675-.628.976-.976.036-.042.06-.131 0-.228l-.776-1.275a1.834 1.834 0 0 1-.075-1.733c.093-.196.176-.396.25-.6a1.831 1.831 0 0 1 1.278-1.173l1.45-.351c.11-.027.156-.107.16-.162a9.63 9.63 0 0 0 0-1.38c-.004-.055-.05-.135-.161-.161l-1.45-.353c-.626-.152-1.08-.625-1.278-1.172a6.576 6.576 0 0 0-.248-.6 1.833 1.833 0 0 1 .074-1.734l.776-1.274c.06-.098.036-.186 0-.228a9.774 9.774 0 0 0-.976-.976c-.042-.036-.131-.06-.228 0l-1.275.776a1.831 1.831 0 0 1-1.733.074 6.88 6.88 0 0 0-.6-.249 1.835 1.835 0 0 1-1.173-1.278l-.351-1.45c-.027-.11-.107-.156-.162-.16a9.63 9.63 0 0 0-1.38 0Z"></path></svg></svg></span><h10>Settings</h10>
+                    </a>
+                  
+                   
+                </div>
+                   <!-------------------END OF SIDEMBER-------->
+                   <label for="create-post" class="btn btn-primary">Create Post</label>
+            </div>
+
+            <!-------------------END OF LEFT-------->
+
+
+
+               <!---------------MIDDLE--------->
+            <div class="middle">
+
+                    <!-------------------STORIES-------->
+                    <div class="stories">
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="./images/profile-33.jpg">
+                            </div>
+                            <p class="name">Your Story</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="./images/profile-35.jpg">
+                            </div>
+                            <p class="name">Rasini Jayamali</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="./images/profile-36.jpg">
+                            </div>
+                            <p class="name">Akila Danosh</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="./images/profile-22.jpg">
+                            </div>
+                            <p class="name">Deneth Danindu</p>
+                        </div>
+                        <div class="story">
+                            <div class="profile-photo">
+                                <img src="./images/profile-39.jpg">
+                            </div>
+                            <p class="name">Denuwan Oshada</p>
+                        </div>
+                    </div>
+                    <!---------------END OF STORIES--->
+                    <form class="create-post">
+                        <div class="profile-photo">
+                            <img src="./images/profile-50.jpg">
+                            
+                        </div>
+                        <input type="text" placeholder="What's on your mind, Anu?" id="create-post">
+                        <input type="submit" value="post" class="btn btn-primary">
+                    </form>
+
+
+                    <!---------FEEDS------>
+                    <div class="feeds">
+                        <!---------FEED 1 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-23.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Agasi Vidusha</h5>
+                                        <small>Colombo, 20 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-8.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-20.jpg"></span>
+                                <span><img src="./images/profile-14.jpg"></span>
+                                <span><img src="./images/profile-25.jpg"></span>
+                                <p>Liked by <b>Isuru Sampath</b>and<b>3,200 others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Agasi Vidusha</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="omments text-muted">View all 277 comments</div>
+                        </div>
+                        
+                        <!---------------END OF FEED------------>
+                        
+                        <!---------FEED 2 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-15.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Gihan Udara</h5>
+                                        <small>Dubai, 35 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-3.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-20.jpg"></span>
+                                <span><img src="./images/profile-14.jpg"></span>
+                                <span><img src="./images/profile-25.jpg"></span>
+                                <p>Liked by <b>Agasi Vidusha</b>and<b>1, 323 others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Gihan Udara</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="omments text-muted">View all 277 comments</div>
+                        </div>
+                        <!---------------END OF FEED------------>
+                        
+                        <!---------FEED 3 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-26.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Sampath Yatiwella</h5>
+                                        <small>India, 17 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-10.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-21.jpg"></span>
+                                <span><img src="./images/profile-35.jpg"></span>
+                                <span><img src="./images/profile-23.jpg"></span>
+                                <p>Liked by <b>Buddhika Aththanayake</b>and<b>323 others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Sampath Yatiwella</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                        <!---------------END OF FEED------------>
+                        
+                        <!---------FEED 4 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-30.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Shiromi Dilrukshi</h5>
+                                        <small>Colombo, 40 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-11.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-22.jpg"></span>
+                                <span><img src="./images/profile-34.jpg"></span>
+                                <span><img src="./images/profile-28.jpg"></span>
+                                <p>Liked by <b>Isuru Sampath</b>and<b> 23 others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Shiromi Dilrukshi</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="omments text-muted">View all 277 comments</div>
+                        </div>
+                        <!---------------END OF FEED------------>
+                        
+                        <!---------FEED 5 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-27.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Malmi Akshara</h5>
+                                        <small>Kandy, 10 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-4.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-29.jpg"></span>
+                                <span><img src="./images/profile-37.jpg"></span>
+                                <span><img src="./images/profile-33.jpg"></span>
+                                <p>Liked by <b>Isuru Sampath</b>and<b>1, 423 others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Malmi Akshara</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="omments text-muted">View all 277 comments</div>
+                        </div>
+                        <!---------------END OF FEED------------>
+                        
+                        <!---------FEED 6 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-28.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Chamika Ransarani</h5>
+                                        <small>Mathara, 15 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-13.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-37.jpg"></span>
+                                <span><img src="./images/profile-14.jpg"></span>
+                                <span><img src="./images/profile-35.jpg"></span>
+                                <p>Liked by <b>Gihan Udara</b>and<b>2, 898 others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Chamika Ransarani</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="omments text-muted">View all 277 comments</div>
+                        </div>
+                        <!---------------END OF FEED------------>
+                        
+                        <!---------FEED 7 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-29.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Avanthi Wathsala</h5>
+                                        <small>Galle, 35 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-14.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-21.jpg"></span>
+                                <span><img src="./images/profile-34.jpg"></span>
+                                <span><img src="./images/profile-40.jpg"></span>
+                                <p>Liked by <b>Malmi Akshara</b>and<b> 127 others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Avanthi Wathsala</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="omments text-muted">View all 277 comments</div>
+                        </div>
+                        <!---------------END OF FEED------------>
+                        
+                        <!---------FEED 8 ------>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img src="./images/profile-8.jpg">
+                                    </div>
+                                    <div class="ingo">
+                                        <h5>Madusha Lakshan</h5>
+                                        <small>Kurunegala, 45 MINUTES AGO</small>
+                                    </div>
+                                    
+                                </div>
+                                <span class="edit"></span>
+                                        <span class="material-icons-outlined">
+                                            ...
+                                            </span>
+                            </div>
+                            <div class="photo">
+                                <img src="./images/feed-5.jpg">
+                            </div>
+                            <div class="action-button">
+                                <div class="interation-buttons">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  viewBox="0 0 64 64" id="like"><path fill="#222" d="M27.285 58.502h-7.25a6.26 6.26 0 0 1-6.147-5.067L11.2 43.73c-2.39-6.78-1.35-10.389-.054-12.223a5.396 5.396 0 0 1 4.518-2.338h5.94a23.45 23.45 0 0 1 .248-7.356c1.444-5.777 4.607-6.03 5.896-5.87 2.017.248 3.853 2.005 3.853 3.685a11.13 11.13 0 0 0 2.958 8.282c3.01 3.009 8.44 3.814 8.494 3.822a1.5 1.5 0 1 1-.424 2.97c-.263-.037-6.483-.962-10.191-4.67a14.028 14.028 0 0 1-3.837-10.322 1.764 1.764 0 0 0-1.417-.798c-.958.039-1.863 1.396-2.422 3.629-.765 3.06.017 7.835.025 7.882a1.5 1.5 0 0 1-1.48 1.747h-7.643a2.406 2.406 0 0 0-2.067 1.069c-.587.83-1.718 3.422.449 9.54.012.033.022.067.032.1l2.717 9.815c.012.044.022.087.03.131a3.261 3.261 0 0 0 3.21 2.676h7.25c5.52 0 12.885-1.228 14.479-2.873a1.5 1.5 0 0 1 2.154 2.088c-2.996 3.09-13.27 3.785-16.634 3.785Zm1.33-38.76Z"></path><path fill="#222" d="M52.727 58.307h-9.885a1.5 1.5 0 0 1-1.5-1.5V31.273a1.5 1.5 0 0 1 1.5-1.5h9.885a1.5 1.5 0 0 1 1.5 1.5v25.534a1.5 1.5 0 0 1-1.5 1.5zm-8.385-3h6.885V32.773h-6.885zM27.058 12.74a1.5 1.5 0 0 1-1.5-1.5V6.998a1.5 1.5 0 0 1 3 0v4.242a1.5 1.5 0 0 1-1.5 1.5zm7.73 4.386a1.5 1.5 0 0 1-.775-2.785l3.634-2.187a1.5 1.5 0 1 1 1.547 2.57L35.56 16.91a1.495 1.495 0 0 1-.772.215zm-15.46 0a1.494 1.494 0 0 1-.772-.215l-3.635-2.187a1.5 1.5 0 0 1 1.547-2.57l3.635 2.187a1.5 1.5 0 0 1-.775 2.785z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 16 16" id="comments"><path fill="#444" d="M16 11.1c0-1.5-1.5-2.8-3.2-3.3-1.3 1.5-3.9 2.4-6.4 2.4H6h-.1c-.1.3-.1.5-.1.8 0 2 2.2 3.6 5 3.6h.6c.4.5 1.7 1.4 3.4 1.4 0 0-.8-.4-.8-1.8 0-.6 2-1.8 2-3.1z"></path><path fill="#444" d="M13 4.6C13 2.1 10.2 0 6.6 0S0 2.1 0 4.6c0 1.7 2 3.2 3 4C3 10.4 1.6 11 1.6 11c2.3 0 3.6-1.1 4.2-1.8h.8c3.5.1 6.4-2 6.4-4.6z"></path></svg></span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="share"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"></path></svg></span>
+
+                                </div>
+                                <div class="bookmark">
+                                   
+                                        
+                                </div>
+                            </div>
+                            <div class="liked-by">
+                                <span><img src="./images/profile-39.jpg"></span>
+                                <span><img src="./images/profile-31.jpg"></span>
+                                <span><img src="./images/profile-21.jpg"></span>
+                                <p>Liked by <b>Asna Fathima</b>and<b>5, 784others</b></p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Madusha Lakshan</b> Lorem ipsum dolor sit quisquam eius. <span class="hash-tag">#lifestyle</span></p>
+                            </div>
+                            <div class="comments text-muted">View all 277 comments</div>
+                        </div>
+                        <!---------------END OF FEED------------>
+                    </div>
+                     <!---------------END OF FEEDS------------>
+               
+            </div>
+            <!--------END OF MIDDLE------------->
+
+
+                <!--------RIGHT---------------->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+
+                            <h4>Messages</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" enable-background="new 0 0 70 70" viewBox="0 0 70 70" id="edit"><path d="M51.8120728,12.3212891C50.960022,11.46875,49.8296509,11,48.628479,11s-2.3320313,0.4697266-3.1835938,1.3212891
+                            l-5.2915039,5.2910156L17.3853149,40.3808594c-0.0008545,0.0008545-0.0020752,0.0010986-0.0029297,0.0019531
+                            s-0.0010986,0.0020752-0.0019531,0.0029297l0,0c-0.000061,0.000061-0.0001221,0.0001831-0.0001831,0.0002441
+                            c-0.1018677,0.1026611-0.173584,0.222168-0.2218018,0.3491211c-0.0026855,0.007019-0.0093384,0.0117188-0.0119019,0.0187988
+                            l-6.0874023,16.9072266c-0.1313477,0.3642578-0.0400391,0.7724609,0.2338867,1.0458984
+                            C11.4839478,58.8974609,11.7393188,59,12.000061,59c0.1137695,0,0.2280273-0.0195313,0.3388672-0.0595703l16.9072266-6.0869141
+                            c0.0075684-0.0027466,0.0126343-0.0098267,0.0201416-0.0127563c0.1107178-0.0422974,0.2119141-0.1101685,0.3048096-0.1932373
+                            c0.0128174-0.0115967,0.0310059-0.0151367,0.0432129-0.0274048l22.7734375-22.7734375l5.2910156-5.2910156
+                            c0.8520508-0.8515625,1.3212891-1.9824219,1.3212891-3.1835938c0-1.2021484-0.4692383-2.3320313-1.3212891-3.1835938
+                            L51.8120728,12.3212891z M17.6860962,52.3134766c-0.6071167-0.6071167-1.3022461-1.0776978-2.0658569-1.416748l2.8756104-7.9863892
+                            l8.5941162,8.5941162l-7.9868164,2.8751831C18.7631226,53.614624,18.2924805,52.9194946,17.6860962,52.3134766z
+                             M19.5039673,41.090332l21.3564453-21.3569336l3.9960938,3.9960938L23.4995728,45.0859375L19.5039673,41.090332z
+                             M14.9418945,52.7807007c0.487854,0.2351074,0.9342041,0.5509033,1.3301392,0.9468384
+                            c0.3952637,0.3952637,0.7113647,0.8414917,0.9472656,1.3302612l-3.5585938,1.2810669L14.9418945,52.7807007z M28.9099731,50.4963379
+                            L24.9136353,46.5l21.3569336-21.3564453l3.9960938,3.9960938L28.9099731,50.4963379z M56.2647095,23.1416016l-4.5839844,4.5839844
+                            l-9.40625-9.40625l4.5844727-4.5839844c0.9472656-0.9492188,2.5898438-0.9501953,3.5390625,0l5.8666992,5.8671875
+                            c0.4741211,0.4736328,0.7353516,1.1025391,0.7353516,1.7695313S56.7388306,22.6669922,56.2647095,23.1416016z" ></path></svg>
+                    </div>
+               
+                    <!---------------------Search Bar------------>
+                    <div class="search-bar">
+                        <?xml version="1.0" ?><svg class="feather feather-search" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/></svg>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+                    <!---------------------MESSAGES CATEGORY------------>
+                    <div class="category">
+                        <h8 class="active">Primary</h8>
+                        <h8>General</h8>
+                        <h8 class="message-requests">Requests(7)</h8>
+                    </div>
+                    <br>
+                      <!---------------------MESSAGE------------>
+                      <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-11.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h15>Uditha Dhanajaya</h15>
+                            <p class="text-muted">Good morning</p>
+                        </div>
+                      </div>
+                             <!---------------------MESSAGE------------>
+                      <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-34.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h15>Binuki Mayadunna</h15>
+                            <p class="text-bold">2 new messages</p>
+                        </div>
+                      </div>
+                       <!---------------------MESSAGE------------>
+                       <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-32.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h15>Dinithi Bagya</h15>
+                            <p class="text-muted">Hi</p>
+                        </div>
+                      </div>
+                       <!---------------------MESSAGE------------>
+                       <div class="message">
+                        <div class="profile-photo">
+                            <img src="./images/profile-33.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h15>Saduni Perera</h15>
+                            <p class="text-bold">Birthday Tomorrow</p>
+                        </div>
+                      </div>
+                </div>
+                <!---------------------END OF MESSAGES------------>
+
+
+                <!---------------------FRIEND REQUSTS------------>
+              <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-30.jpg">
+                        </div>
+                    <div>
+                    <h5>Binuki Hansika</h5>
+                    <p class="text-muted">
+                        7mutual friends
+                    </p>
+    </div>
+</div>
+              <div class="action">
+                <button class="btn btn-primary">
+                    Accept
+                </button>
+                <button class="btn">
+                    Decline
+                </button>
+            </div>
+            </div>
+</div>
+ <!---------------------FRIEND REQUSTS------------>
+ <div class="friend-requests">
+    <h4>Requests</h4>
+    <div class="request">
+        <div class="info">
+            <div class="profile-photo">
+                <img src="./images/profile-31.jpg">
+            </div>
+        <div>
+        <h5>Achini Madusha</h5>
+        <p class="text-muted">
+            10mutual friends
+        </p>
+</div>
+</div>
+  <div class="action">
+    <button class="btn btn-primary">
+        Accept
+    </button>
+    <button class="btn">
+        Decline
+    </button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+         <!------------------------END OF RIGHT---------------->   
+        
+
+</main>
+
+
+
+</body>
+        
+</html> 
